@@ -20,9 +20,9 @@
         </nav>
 </header>
 
-@yield("content")
+<?php echo $__env->yieldContent("content"); ?>
 
 <footer>
     <a href="/" alt="logo">Memories 4EVer</a>
     <p>© 2025 Memories 4Ever</p>
-</footer>
+</footer><?php /**PATH C:\Users\lolad\git\photoss3\resources\views/app.blade.php ENDPATH**/ ?>
