@@ -22,7 +22,7 @@
 </header>
 
 <div class= "container">
-@yield("content")
+<?php echo $__env->yieldContent("content"); ?>
 </div>
 
 <footer>
@@ -31,4 +31,4 @@
 </footer>
 
 </body>
-</html>
+</html><?php /**PATH C:\Users\aneli\Documents\git\photoss3\resources\views/app.blade.php ENDPATH**/ ?>
