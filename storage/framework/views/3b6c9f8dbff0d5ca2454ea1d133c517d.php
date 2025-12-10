@@ -1,4 +1,3 @@
- <link rel="stylesheet" href="../css/style.css" />
 
 <?php $__env->startSection("content"); ?>        
 <?php $__currentLoopData = $photos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $p): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>

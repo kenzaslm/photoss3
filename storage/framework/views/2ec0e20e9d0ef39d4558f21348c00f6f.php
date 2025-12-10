@@ -13,8 +13,19 @@
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </select><br/><br/>
     
-    <label for="url">Image (optionnel) :</label>
-    <input id="url" type="text" name="url"><br>
+    <label for="url">Image :</label>
+    <input id="url" type="text" name="url"><br/><br/>
+
+    <label for="tags">Tags :</label>
+    <?php $__currentLoopData = $tags; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $tag): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+        <label>
+            <input type="checkbox" name="tag_id[]" value="<?php echo e($tag->id); ?>">
+            <?php echo e($tag->nom); ?>
+
+        </label>
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+<br><br>
+
     
     <input type="submit" value="Ajouter la photo" />
 </form>
